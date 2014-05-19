@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1 Search
+	form
+		input#search-input(placeholder="Search")
+		button.search-btn Submit
+	div#search-results
+
+block templates
+	script#results-template(type="text/x-handlebars-template")
+		div
+			h3.title {{title}} 
+			p.category {{category}}
+			p.description {{desc}}
